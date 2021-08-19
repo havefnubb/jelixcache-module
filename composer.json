@@ -1,0 +1,38 @@
+{
+    "name": "havefnubb/jelixcache-module",
+    "type": "jelix-module",
+    "description": "Jelix module providing an interface to clear temp files",
+    "keywords": ["admin", "module", "jelix"],
+    "license": "LGPL-2.1-only",
+    "authors": [
+        {
+            "name": "FoxMask",
+            "email": "foxmask@foxmask.net",
+            "homepage": "http://foxmask.net",
+            "role": "Developer"
+        },
+        {
+            "name": "Laurent Jouanneau",
+            "email": "laurent@jelix.org",
+            "homepage": "https://jelix.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "archive": {
+        "exclude": ["/test"]
+    },
+    "extra": {
+        "jelix" : {
+            "modules" : [
+                "jelixcache/"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "stable"
+}
