@@ -14,7 +14,7 @@ class jelixcacheModuleInstaller extends \Jelix\Installer\Module\Installer {
 
     public function postInstall(InstallHelpers $helpers)
     {
-        jAcl2DbManager::addRole('jelixcache.access', 'jelixcache~jelixcache.acl.access');
+        jAcl2DbManager::createRight('jelixcache.access', 'jelixcache~jelixcache.acl.access');
         jAcl2DbManager::addRight('admins', 'jelixcache.access'); // for admin group
         //jAcl2DbManager::addRight('moderators', 'jelixcache.access');
     }
